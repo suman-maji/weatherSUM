@@ -1,0 +1,236 @@
+body {
+    padding: 1.5% 4%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* NAVBAR CSS BEGINS */
+
+.navbar-brand {
+    font-weight: bolder;
+}
+.contact:hover{
+    outline: none;
+    box-shadow: inset 0 -2px 0 0 #28a745;
+}
+
+@media only screen and (min-width: 992px) {
+    .form-control {
+        display: inline-block;
+        width: 78%;
+    }
+
+    .dropDownCentre {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .navbar-toggler{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .navbar-toggler{
+        margin-left: 40%;
+    }
+}
+    
+@media only screen and (max-width: 991px) {
+    .form-control {
+        display: inline-block;
+        width: 79%;
+    }
+
+    .dropDownCentre {
+        text-align: center;
+    }
+}
+.navbar-dark .navbar-toggler{
+    border: 2px solid #28a7a1;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(Image/search.png);
+}
+
+/* NAVBAR CSS ENDS */
+
+
+.col1, .col2 {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.col1{
+    padding-top: 8vh;
+}
+
+.city {
+    padding-top: 5%;
+}
+
+
+
+
+.temp {  /* hr below temperature */
+    overflow: visible;
+    height: 30 px;
+    border-style: solid;
+    border-color: #a3b4d6;
+    border-width: 1 px 0 0 0;
+    border-radius: 20 px;
+    width: 30%;
+}
+
+.features-item{   /* each col of carousel */
+    text-align: center;
+    color: white;
+    line-height: 4px;
+}
+
+.anime{  /* weather icon animation */
+    animation: iconAnime 1.5s linear infinite alternate;
+}
+@keyframes iconAnime {
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.roundBox{ /* for search button */
+    border-radius: 25%;
+}
+
+.carousel-indicators{
+    visibility: hidden;
+}
+
+
+.section-map {
+    margin: 5rem 10rem 4rem 10rem;
+    position: relative;
+    height: 35rem;
+}
+
+#map {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.marker {
+    background-image: url('/Image/marker.png');
+    background-size: cover;
+    width: 32px;
+    height: 40px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+
+.mapboxgl-popup {
+    max-width: 25rem;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 1rem !important;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+
+.footer{
+    margin-top: 3%;
+    text-align: center;
+    color: white;
+}
+.fb{
+    border-radius: 50%;
+    margin-right: 2%;
+    opacity: 0.8;
+}
+.fb:hover{
+    box-shadow: 10px 0px 40px 20px white;
+}
+.in{
+    border-radius: 50%;
+    margin-right: 2%;
+    opacity: 0.8;
+}
+.in:hover{
+    box-shadow: 10px 0px 40px 20px white;
+}
+.git{
+    border-radius: 50%;
+    margin-right: 2%;
+    opacity: 0.8;
+}
+.git:hover{
+    box-shadow: 10px 0px 40px 20px white;
+}
+.copy{
+    padding-top: 1.5%;
+}
+.love{
+    padding-bottom: 1%;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 80.25%;
+    }
+}
+@media (max-width: 59em) {
+    html {
+        font-size: 71.5%;
+    }
+}
+@media (max-width: 44em) {
+    .section-map{
+        margin: 1rem 5rem 4rem 5rem;
+    }
+    footer{
+        padding: 5rem 5rem 3rem 5rem;
+    }
+}
+@media (max-width: 37.5em) {
+    .section-map{
+        margin: 1rem 1rem 4rem 1rem;
+    }
+}
+@media (max-width: 31.25em) {
+    footer{
+        padding: 5rem 1rem 3rem 1rem;
+        justify-items: end;
+    }
+    .section-map{
+        margin: 1rem 0rem 4rem 0rem;
+    }
+}
+@media (max-width: 23.75em) {
+    .section-hero{
+        padding: 1rem 2rem 7rem 2rem;
+    }
+}
+@media (max-width: 21.875em) {
+    footer{
+        padding: 5rem 0rem 3rem 1rem;
+    }
+}
